@@ -1,8 +1,22 @@
-# Secrets: never commit passwords
+# Cisco images are licensed software. Never commit them.
+*.qcow2
+*.vmdk
+*.ova
+*.iso
+*.img
+*.bin
+
+# VMware files
+*.vmx
+*.vmsd
+*.vmem
+*.nvram
+*.lck/
+
+# Secrets
 .env
-*.env
-secrets/
-inventory_secrets.*
+*.secret
+credentials*
 
 # Python
 __pycache__/
@@ -10,15 +24,6 @@ __pycache__/
 .venv/
 venv/
 
-# GNS3 temporary files and large images
-*.gns3.backup
-project-files/
-*.qcow2
-*.img
-*.iso
-
-# OS / editor
-.DS_Store
+# OS clutter
 Thumbs.db
-.vscode/
-.idea/
+.DS_Store
